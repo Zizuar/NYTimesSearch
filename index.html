@@ -1,29 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include 'head.html' %}
-  <body class="HolyGrail">
-    <header class="HolyGrail-header">
-      <div class="Header Header--cozy" role="banner">
-        {% include 'header.html' %}
-      </div>
-    </header>
-    <main class="HolyGrail-body">
-      <article class="HolyGrail-content">
-        <h1>{{ page.title }}</h1>
-        {{ page.content }}
-      </article>
-      <nav class="HolyGrail-nav u-textCenter">
-        <strong>Navigation</strong>
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NY Times Search | Team "Clickbait"</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">NY Times "Clickbait" Search</a>
       </nav>
-      <aside class="HolyGrail-ads u-textCenter">
-        <strong>Advertisements</strong>
-      </aside>
-    </main>
-    <footer class="HolyGrail-footer">
-      <div class="Footer">
-        {% include 'footer.html' %}
-      </div>
-    </footer>
-    {% include 'scripts.html' %}
-  </body>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="crit">
+        <ul>
+          <li>
+            <label for="Key"> Main Term Keyword </label>
+            <input type="text" id="termKey" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="sYear">Start Year</label>
+            <input type="text" id="startYear" name="Start Year" placeholder="1997" required="required">
+          </li>
+          <li>
+            <label for="eYear">End Year</label>
+            <input type="text" id="endYear" name="End Year" placeholder="2018" required="required">
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
+
 </html>
