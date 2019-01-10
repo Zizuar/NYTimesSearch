@@ -8,3 +8,7 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
 }
+.navbar-text{
+  text-align: center !important;
+  margin: auto;
+}
