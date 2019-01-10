@@ -13,53 +13,80 @@
 <body>
     <div class="jumbotron container">
         <h1 class="display-4">
-          <i class="far fa-newspaper"></i></a>NY Times "Clickbait" Search
+            <i class="far fa-newspaper"></i>
+            </a>NY Times "Clickbait" Search
         </h1>
         
       </div>
   
     
-      
-      
-      <div id="main-container" class="container card">    
-        <section class="main-section">
-          <form>
-            <div class="card-header">
-              <h2>Contact</h2>
+      <div class="row">
+        <div class="col-md-3">
 
-            </div>
-            <div class="form-group">
-              <label for="mainTerm">Main Term Keyword</label>
-              <input type="text" class="form-control" id="mainTerm" aria-describedby="emailHelp" placeholder="Enter Keyword"> 
-            </div>
+       
+        
+            <div id="main-container" class="container card-body">    
+                <div class="card border-dark mb-1">
+                  
+                  <div class="card-header">
+                    <i class="far fa-calendar-alt"></i>
+                  
+                    Contact
+                  
+                </div>
+                <div class="card-body">
+                  
+                  <form>
+                    <div class="form-group">
+                    <label for="mainTerm">Main Term Keyword</label>
+                    <input type="text" class="form-control" id="mainTerm" aria-describedby="emailHelp" placeholder="Enter Keyword"> 
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="startYear">Start Year</label>
+                    <input type="number" class="form-control" id="startYear" placeholder="1901" min="1901" max="2019" step="1">
+                  </div>
 
-            <div class="form-group">
-              <label for="startYear">Start Year</label>
-              <input type="number" class="form-control" id="startYear" placeholder="1901" min="1901" max="2019" step="1">
-            </div>
-
-            <div class="form-group">
-                <label for="endYear">End Year</label>
-                <input type="number" class="form-control" id="endYear" placeholder="2019" min="1901" max="2019" step="1">
+                  <div class="form-group">
+                    <label for="endYear">End Year</label>
+                      <input type="number" class="form-control" id="endYear" placeholder="2019" min="1901" max="2019" step="1">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="records"># of Records to Display</label>
+                      <select class="form-control" name="records">
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                      </select>
+                    </div>  
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br>
+                    <br>
+                    <button type="reset" class="btn btn-primary">Clear Search data</button>
+                  </form>
+                </div>
               </div>
-
-              <div class="form-group">
-                <label for="records"># of Records to Display</label>
-                <select class="form-control" name="records">
-                    <option value="1">1</option>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="15">15</option>
-                  </select>
-              </div>  
-
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn btn-primary">Clear Search data</button>
-              <br>
-          </form>
-        </section>
+              
+            </div>
+    
+        </div>
+        
+        <div class="col-md-9">
+          
+          <div class="container card-body">
+            <div class="card border-dark mb-3">
+              <div class="card-header"><i class="fa fa-book" aria-hidden="true"></i> Top Article</div>
+              <div class="card-body">
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
-
   <footer>
     <div class="container">
       Copyright &copy; 
