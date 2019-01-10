@@ -1,8 +1,9 @@
 .jumbotron{
-  background-color: darkslategrey!important;
+  background-color: rgb(13, 31, 58)!important;
 }
 
 .display-4{
+  color: aliceblue;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
