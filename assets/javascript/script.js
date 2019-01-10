@@ -1,7 +1,8 @@
-var name = "";
-var limit = "";
-var startYear = "";
-var endYear = "";
+$("#submit").on("click", function() {
+var name = $("#termKey").val().trim();
+var limit = $("#");
+var startYear = $("#startYear").val().trim();
+var endYear = $("#endYear").val().trim();
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 url += '?' + $.param({
   'api-key': "b9f91d369ff59547cd47b931d8cbc56b:0:74623931",
@@ -21,5 +22,4 @@ $.ajax({
     console.log(response.startYear);
     console.log(response.endYear);
 })
-
-
+})
