@@ -1,6 +1,7 @@
-$("#submit").on("click", function() {
+$("#submit").on("click", function(event) {
+event.preventDefault();
 var name = $("#termKey").val().trim();
-var limit = $("#");
+var limit = $(".form-group").val();
 var startYear = $("#startYear").val().trim();
 var endYear = $("#endYear").val().trim();
 var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
